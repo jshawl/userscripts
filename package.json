@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "tsc -b",
-    "prepublish": "build"
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "typescript": "^3.8.3"
