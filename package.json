@@ -3,6 +3,9 @@
   "version": "1.0.2",
   "description": "@jshawl's userscripts",
   "private": false,
+  "files": [
+    "dist/"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jshawl/userscripts.git"

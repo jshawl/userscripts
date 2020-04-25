@@ -12,7 +12,8 @@
     'use strict';
     document.addEventListener("play", (e) => {
         if (!location.pathname.match(/watch/)) {
-            e.target.pause()
+            const video = e.target as HTMLVideoElement
+            video.pause()
         }
     }, true)
 })();
