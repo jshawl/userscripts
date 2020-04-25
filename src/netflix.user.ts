@@ -9,7 +9,6 @@
 // ==/UserScript==
 
 (function () {
-    'use strict';
     document.addEventListener("play", (e) => {
         if (!location.pathname.match(/watch/)) {
             const video = e.target as HTMLVideoElement
