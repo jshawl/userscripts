@@ -4,6 +4,7 @@
 // @description  No auto playing videos
 // @author       @jshawl
 // @match        https://www.netflix.com/*
+// @license      MIT; https://opensource.org/licenses/MIT
 // @grant        none
 // ==/UserScript==
 
