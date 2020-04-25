@@ -1,0 +1,10 @@
+{
+  "name": "@jshawl/userscripts",
+  "version": "1.0.1",
+  "description": "@jshawl's userscripts",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jshawl/userscripts.git"
+  }
+}
