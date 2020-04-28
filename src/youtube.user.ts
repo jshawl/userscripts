@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Censor Ads
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Mute, hide, skip, and close youtube ads
 // @author       @jshawl
-// @match        https://www.youtube.com/watch*
+// @match        https://www.youtube.com/*
 // @downloadURL  https://unpkg.com/@jshawl/userscripts/dist/youtube.user.js
 // @grant        none
 // ==/UserScript==
