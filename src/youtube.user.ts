@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Censor Ads
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  Mute, hide, skip, and close youtube ads
 // @author       @jshawl
 // @match        https://www.youtube.com/*
@@ -44,7 +44,7 @@ const click = (selector: string) => {
   }
 };
 
-setInterval(() => {
+const loop = () => {
   const video = document.querySelector("video");
   if (!video || !isVideoPlaying(video)) return;
   const adIsShowing = !!document.querySelector(".ad-showing");
@@ -52,4 +52,7 @@ setInterval(() => {
   adIsShowing ? censor(video) : uncensor();
   click(".ytp-ad-skip-button");
   click(".ytp-ad-overlay-close-button");
-}, 1000);
+  requestAnimationFrame(loop);
+};
+
+requestAnimationFrame(loop);
