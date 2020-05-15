@@ -12,7 +12,8 @@
   },
   "scripts": {
     "build": "tsc -b",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "deploy": "npm publish --access public"
   },
   "devDependencies": {
     "typescript": "^3.8.3"

@@ -32,19 +32,19 @@ const censor = (video: HTMLVideoElement) => {
   video.parentElement?.appendChild(overlay);
 };
 
-const uncensor = () => {
+const uncensor = (): void => {
   const overlay = document.querySelector(".userscript-censor");
   if (overlay) overlay.remove();
 };
 
-const click = (selector: string) => {
+const click = (selector: string): void => {
   const element = document.querySelector(selector) as HTMLElement;
   if (element) {
     element.click();
   }
 };
 
-const loop = () => {
+const loop = (): void => {
   const video = document.querySelector("video");
   if (!video || !isVideoPlaying(video)) return;
   const adIsShowing = !!document.querySelector(".ad-showing");

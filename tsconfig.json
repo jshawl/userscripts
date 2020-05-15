@@ -1,15 +1,14 @@
 {
-    "compilerOptions": {
-        "strict": true,
-        "alwaysStrict": true,
-        "outDir": "dist",
-        "noImplicitAny": true,
-        "noUnusedLocals": true,
-        "noUnusedParameters": true,
-        "noImplicitReturns": true,
-        "noFallthroughCasesInSwitch": true,
-    },
-    "include": [
-        "src/**/*.ts"
-    ]
+  "compilerOptions": {
+    "lib": ["dom"],
+    "strict": true,
+    "alwaysStrict": true,
+    "outDir": "dist",
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src/**/*.ts"]
 }
